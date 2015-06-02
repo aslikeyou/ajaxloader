@@ -87,7 +87,7 @@
             left : 0,
             height : '100%',
             width : '100%',
-            background : "rgba(255, 255, 255, .8) url('http://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat",
+            background : "rgba(255, 255, 255, .8) url('//i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat",
         },
         classLoading : {
             overflow : 'hidden'
@@ -114,17 +114,17 @@
         forEach(merged['classModal'], function(value, prop) {
             styles += prop + ': ' + value + ';'
         });
-        styles = "} ";
-        styles = "body.loading {";
+        styles += "} ";
+        styles += "body.loading {";
         forEach(merged['classLoading'], function(value, prop) {
             styles += prop + ': ' + value + ';'
         });
-        styles = "} ";
-        styles = "body.loading .modal {";
+        styles += "} ";
+        styles += "body.loading .modal {";
         forEach(merged['classLoadingModal'], function(value, prop) {
             styles += prop + ': ' + value + ';'
         });
-        styles = "} ";
+        styles += "} ";
 
         appendStyle(styles);
         appendDiv();
